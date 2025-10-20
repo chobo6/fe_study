@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <table>
+        <!-- 한개 행 tr
+        한개 열 th, td -->
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>콜라</th>
+            <th>1개</th>
+            <th>1500원</th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th>사이다</th>
+            <th>2개</th>
+            <th>1000원</th>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <th>탄산수</th>
+            <th>3개</th>
+            <th>1000원</th>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        <!-- 한개 행 tr
+        한개 열 th, td -->
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>콜라</th>
+                <th>1개</th>
+                <th>1500원</th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>사이다</th>
+                <th>2개</th>
+                <th rowspan="2">1000원</th>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <th>탄산수</th>
+                <th>3개</th>
+                <!-- <th>1000원</th> -->
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">6500원</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
