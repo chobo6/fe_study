@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>나의 점심 취향 설문조사</h1>
+
+    <form>
+        이름 : <input type="text">
+
+        <br><br>
+
+        <fieldset>
+            <legend>학년 선택</legend>
+            <table>
+                <tr>
+                    <th>번호</th>
+                    <th>학년</th>
+                    <th>선택</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>1학년</td>
+                    <td><input type="radio" name="grade"></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>2학년</td>
+                    <td><input type="radio" name="grade"></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>3학년</td>
+                    <td><input type="radio" name="grade"></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>4학년</td>
+                    <td><input type="radio" name="grade"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        
+        <fieldset>
+            <legend>좋아하는 음식(복수 선택 가능)</legend>
+            <label>한식<input type="checkbox"></label><br>
+            <label>중식<input type="checkbox"></label><br>
+            <label>일식<input type="checkbox"></label><br>
+            <label>양식<input type="checkbox"></label><br>
+            <label>분식<input type="checkbox"></label>
+        </fieldset>
+
+        <button type="submit">제출하기</button>
+
+    </form>
+</body>
+</html>
