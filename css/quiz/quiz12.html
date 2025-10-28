@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 700px;
+            height: 500px;
+
+            margin:0 auto;
+            margin-top: 50px;
+
+            border: 1px solid black;
+        }
+
+        /* --------- 상단 Header 스타일 - 시작 ---------- */
+        .header {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            /* background-color: lightblue; */
+        }
+
+        .main-menu {
+            background-color: red;
+            width: 200px;
+            height: 100px;
+        }
+
+        .mypage {
+            background-color: red;  
+            width: 100px;
+            height: 100px;
+        }
+        /* --------- 상단 Header 스타일 - 끝 ---------- */
+
+        
+        /* --------- 가운데 Main 영역 스타일 - 시작 ---------- */
+
+        .main {
+            height: 300px;
+            background-color: lightblue;
+            display: flex;
+        }
+
+        .section {
+            width: 70%;
+            height: 300px;
+            background-color: orange;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* align-items: center; */
+            align-content: center;
+        }
+
+        .article {
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            margin: 30px;
+
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+
+        .article:hover {
+            /* width:140px;
+            height:70px;
+            margin:10px; */
+            /* transform: scale(1.5, 1.5); */
+            transform: scale(1.4);  /* x축 크기, y축 크기 모두 */
+        }
+
+        .aside {
+            width: 30%;
+            height: 300px;
+            background-color: green;
+        }
+
+        /* --------- 가운데 Main 영역 스타일 - 끝 ---------- */
+
+
+        /* --------- footer 스타일 ---------- */
+        .footer {
+            background-color: blue;
+            height: 100px;
+        }
+
+
+
+
+        /* 가운데 정렬 */
+        .align-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 글씨 흰색 */
+        .color-white {
+            color:white;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="header">
+            <div class="main-menu align-center color-white">메인메뉴</div>
+            <div class="mypage align-center color-white">마이페이지</div>
+        </div>
+
+        <div class="main">
+            <div class="section">
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+            </div>
+
+            <div class="aside align-center color-white">aside</div>
+        </div>
+
+        <div class="footer align-center color-white">footer</div>
+
+    </div>
+
+</body>
+</html>
