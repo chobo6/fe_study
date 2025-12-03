@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <form action="" id="form">
+        <input type="text" id="loginId" placeholder="아이디"><br>
+        <input type="password" id="loginPw" placeholder="비밀번호"><br>
+        <button id="btnLogin" onclick="tryLogin()">로그인 시도</button><br>
+    </form>
+    <script>
+        const btn = document.getElementById('btnLogin');
+        const id = document.getElementById('loginId');
+        const pw = document.getElementById('loginPw');
+        const form = document.getElementById('form');
+
+        id.addEventListener('keydown', (e)=>{
+            console.log(e.key);
+            if(e.key == 'Enter'){
+                pw.focus();
+                e.preventDefault();
+            }
+        })
+
+        pw.addEventListener('keydown', (e)=>{
+            if(e.key == 'Enter'){
+                pw.focus();
+                e.preventDefault();
+            }
+        })
+
+        btn.addEventListener('click', ()=>{
+            id.value = '';
+            pw.value = '';
+        })
+
+        function tryLogin(){
+            form.addEventListener('submit', (e)=>{
+                e.preventDefault();
+                console.log("prevent")
+            })
+            if(id.value.trim() == ''){
+                alert("아이디를 입력하세요.");
+                id.focus();
+                return;
+            }
+            if(pw.value.trim() == ''){
+                alert("비밀번호를 입력하세요.");
+                pw.focus();
+                return;
+            }
+
+            form.submit();
+        }
+
+        
+    </script>
+</body>
+</html>
